@@ -1,0 +1,23 @@
+// 用于设置驱动构建过程的代码
+buildscript {
+    repositories {
+        // 声明使用maven仓库
+        jcenter()
+    }
+
+    // 声明了使用 Android Studio gradle 插件版本
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+    }
+}
+
+// 设置每一个 module 的构建过程。在此例中，设置了每一个 module 使用 maven 仓库依赖。
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
