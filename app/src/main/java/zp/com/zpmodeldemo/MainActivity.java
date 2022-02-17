@@ -1,13 +1,11 @@
 package zp.com.zpmodeldemo;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-
 import java.util.ArrayList;
 import java.util.Random;
-
 import zp.com.zpmodeldemo.AbstractFactory.MyFactory;
 import zp.com.zpmodeldemo.AbstractFactory.ZpFactory01;
 import zp.com.zpmodeldemo.AbstractFactory.ZpFactory02;
@@ -55,11 +53,8 @@ import zp.com.zpmodeldemo.Proxy.MyHouse;
 import zp.com.zpmodeldemo.Proxy.ProxyHouse;
 import zp.com.zpmodeldemo.SimpleFactory.Operation;
 import zp.com.zpmodeldemo.SimpleFactory.OperationFactory;
-import zp.com.zpmodeldemo.State.ClosingState;
 import zp.com.zpmodeldemo.State.IContext;
 import zp.com.zpmodeldemo.State.OpeningState;
-import zp.com.zpmodeldemo.State.RunningState;
-import zp.com.zpmodeldemo.State.StopingState;
 import zp.com.zpmodeldemo.Strategy.AStrategy;
 import zp.com.zpmodeldemo.Strategy.BStrategy;
 import zp.com.zpmodeldemo.Strategy.CStrategy;
@@ -67,7 +62,7 @@ import zp.com.zpmodeldemo.Strategy.ZpContext;
 import zp.com.zpmodeldemo.TemplateMethod.ACar;
 import zp.com.zpmodeldemo.TemplateMethod.BCar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
